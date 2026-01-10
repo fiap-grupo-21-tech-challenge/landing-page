@@ -2,16 +2,8 @@
 import { FiUsers, FiTrendingUp, FiBarChart, FiShield, FiSmartphone } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
 import BannerImage from "./assets/banner-image.png"
-
-const Stars = () => {
-  const stars = [1, 2, 3, 4, 5].map((item) => <FaStar key={item} size={20} className="text-yellow-400" />)
-
-  return (
-    <div className="flex gap-1">
-      {stars}
-    </div>
-  )
-}
+import { navigateToUrl } from "single-spa";
+import { Stars } from './components/stars';
 
 export default function Root(props) {
   return (
@@ -34,7 +26,7 @@ export default function Root(props) {
           </span>
 
           <div>
-            <button className="button-primary" type="button">Começar Grátis</button>
+            <button onClick={() => navigateToUrl('/sign-in')} className="button-primary" type="button">Começar Grátis</button>
           </div>
 
           <div className="flex gap-8">
@@ -199,8 +191,8 @@ export default function Root(props) {
         </h2>
 
         <div className="flex items-center gap-4 max-sm:gap-2">
-          <button onClick={() => { }} className="button-tertiary" type="button">Criar Conta Grátis</button>
-          <button onClick={() => { }} className="button-primary" type="button">Fazer Login</button>
+          <button onClick={() => navigateToUrl('/sign-up')} className="button-tertiary" type="button">Criar Conta Grátis</button>
+          <button onClick={() => navigateToUrl('/sign-in')} className="button-primary" type="button">Fazer Login</button>
         </div>
       </section>
     </>
