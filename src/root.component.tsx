@@ -36,7 +36,7 @@ export default function Root(props) {
             </div>
 
             <div className="flex gap-2">
-              <FaStar size={20} className="text-yellow-400" />
+              <FaStar size={20} color="orange" />
               <span>4,9/5 avaliações</span>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function Root(props) {
 
         <div className="flex justify-between min-md:gap-24 mt-16 max-sm:flex-col max-sm:gap-16">
           <div className="flex flex-col items-center text-center min-md:gap-4 max-sm:gap-2">
-            <FiTrendingUp size={30} style={{ color: 'var(--color-blue)' }} />
+            <FiTrendingUp size={30} color='var(--color-blue)' />
             <h2 className="text-2xl font-semibold">Controle Financeiro Completo</h2>
             <span color="tertiary">
               Monitore suas receitas,
@@ -69,7 +69,7 @@ export default function Root(props) {
           </div>
 
           <div className="flex flex-col items-center text-center min-md:gap-4 max-sm:gap-2">
-            <FiBarChart size={30} style={{ color: 'var(--color-green)' }} />
+            <FiBarChart size={30} color='var(--color-green)' />
             <h2 className="text-2xl font-semibold">Relatórios Detalhados</h2>
             <span color="tertiary">
               Visualize seus gastos por
@@ -79,7 +79,7 @@ export default function Root(props) {
           </div>
 
           <div className="flex flex-col items-center text-center min-md:gap-4 max-sm:gap-2">
-            <FiShield size={30} style={{ color: 'var(--color-purple)' }} />
+            <FiShield size={30} color='var(--color-purple)' />
             <h2 className="text-2xl font-semibold">Segurança Total</h2>
             <span color="tertiary">
               Seus dados estão protegidos
@@ -89,7 +89,7 @@ export default function Root(props) {
           </div>
 
           <div className="flex flex-col items-center text-center min-md:gap-4 max-sm:gap-2">
-            <FiSmartphone size={30} style={{ color: 'var(--color-red)' }} />
+            <FiSmartphone size={30} color='var(--color-red)' />
             <h2 className="text-2xl font-semibold">Design Responsivo</h2>
             <span color="tertiary">
               Acesse de qualquer dispositivo
