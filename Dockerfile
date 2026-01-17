@@ -1,13 +1,15 @@
-FROM node:20.16.0-alpine
+FROM node:20-alpine
+
+# Instalamos um servidor estático simples do Node
+RUN npm install -g serve
 
 WORKDIR /app
 
-COPY package*.json .
+# Copiamos o conteúdo da sua pasta src para dentro do container
+COPY ./src .
 
-RUN npm install
+EXPOSE 8082
 
-COPY . .
-
-EXPOSE 80
-
-CMD ["npm", "start"]
+# -s: Single Page App mode (redireciona rotas para o index.html)
+# -l: Porta onde vai rodar
+CMD ["serve", "-s", ".", "-l", "8082"]
